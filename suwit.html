@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUWIT JAWA</title>
+    <link rel="stylesheet" href="suwitStyle.css" />
+  </head>
+  <body id="vanta-bg">
+    <h1>Suwit Jawa</h1>
+    <div class="container">
+      <div class="area-komputer">
+        <div class="skor">
+          <p class="komputer"></p>
+          <p class="player"></p>
+        </div>
+        <img src="img/gajah.png" class="img-computer" />
+      </div>
+      <div class="info"></div>
+      <div class="area-player">
+        <ul>
+          <li><img src="img/gajah.png" class="gajah" /></li>
+          <li><img src="img/orang.png" class="orang" /></li>
+          <li><img src="img/semut.png" class="semut" /></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script>
+      VANTA.DOTS({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x3e9ad6,
+        color2: 0xf79133,
+        backgroundColor: 0x102c3f,
+        size: 3.2,
+        spacing: 67.0,
+        showLines: false,
+      });
+    </script>
+    <script src="suwit.js"></script>
+  </body>
+</html>
